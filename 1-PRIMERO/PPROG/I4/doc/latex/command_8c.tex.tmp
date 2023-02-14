@@ -1,0 +1,98 @@
+\hypertarget{command_8c}{}\doxysection{command.\+c File Reference}
+\label{command_8c}\index{command.c@{command.c}}
+
+
+It implements the command interpreter.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$strings.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}command.\+h\char`\"{}}\newline
+Include dependency graph for command.\+c\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{command_8c_a2b1bd24d2eddf8081d8c541e4cc4fd4b}{C\+M\+D\+\_\+\+L\+E\+N\+G\+HT}}~30
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} \mbox{\hyperlink{command_8c_a7ad92506157db30fe6e1941d62752291}{command\+\_\+get\+\_\+user\+\_\+input}} ()
+\begin{DoxyCompactList}\small\item\em obtains the user instruction \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{command_8c_a3574ce85761f52cf9b70d061831533ee}{cmd\+\_\+to\+\_\+str}} \mbox{[}\mbox{\hyperlink{command_8h_ae180fe89f0ae48ce5c80ffaa18de9271}{N\+\_\+\+C\+MD}}\mbox{]}\mbox{[}\mbox{\hyperlink{command_8h_a8d93932dcdc527c13e06b688b68c7ffc}{N\+\_\+\+C\+M\+DT}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the command interpreter. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/11-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{command_8c_a2b1bd24d2eddf8081d8c541e4cc4fd4b}\label{command_8c_a2b1bd24d2eddf8081d8c541e4cc4fd4b}} 
+\index{command.c@{command.c}!CMD\_LENGHT@{CMD\_LENGHT}}
+\index{CMD\_LENGHT@{CMD\_LENGHT}!command.c@{command.c}}
+\doxysubsubsection{\texorpdfstring{CMD\_LENGHT}{CMD\_LENGHT}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+L\+E\+N\+G\+HT~30}
+
+Macro for length 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{command_8c_a7ad92506157db30fe6e1941d62752291}\label{command_8c_a7ad92506157db30fe6e1941d62752291}} 
+\index{command.c@{command.c}!command\_get\_user\_input@{command\_get\_user\_input}}
+\index{command\_get\_user\_input@{command\_get\_user\_input}!command.c@{command.c}}
+\doxysubsubsection{\texorpdfstring{command\_get\_user\_input()}{command\_get\_user\_input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} command\+\_\+get\+\_\+user\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+obtains the user instruction 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+the command introduced 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{command_8c_a3574ce85761f52cf9b70d061831533ee}\label{command_8c_a3574ce85761f52cf9b70d061831533ee}} 
+\index{command.c@{command.c}!cmd\_to\_str@{cmd\_to\_str}}
+\index{cmd\_to\_str@{cmd\_to\_str}!command.c@{command.c}}
+\doxysubsubsection{\texorpdfstring{cmd\_to\_str}{cmd\_to\_str}}
+{\footnotesize\ttfamily char$\ast$ cmd\+\_\+to\+\_\+str\mbox{[}\mbox{\hyperlink{command_8h_ae180fe89f0ae48ce5c80ffaa18de9271}{N\+\_\+\+C\+MD}}\mbox{]}\mbox{[}\mbox{\hyperlink{command_8h_a8d93932dcdc527c13e06b688b68c7ffc}{N\+\_\+\+C\+M\+DT}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\{\textcolor{stringliteral}{""}, \textcolor{stringliteral}{"No command"}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Unknown"}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"e"}, \textcolor{stringliteral}{"Exit"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"t"}, \textcolor{stringliteral}{"Take"}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"d"}, \textcolor{stringliteral}{"Drop"}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"a"}, \textcolor{stringliteral}{"Attack"}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"m"}, \textcolor{stringliteral}{"Move"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"i"}, \textcolor{stringliteral}{"Inspect"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"Ton"}, \textcolor{stringliteral}{"Turnon"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"Toff"}, \textcolor{stringliteral}{"Turnoff"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"o"}, \textcolor{stringliteral}{"Open"}\}}
+\DoxyCodeLine{            \}}
+
+\end{DoxyCode}
+$<$ bidimensional variable that cotains the commands 

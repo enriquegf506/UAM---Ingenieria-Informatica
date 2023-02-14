@@ -1,0 +1,121 @@
+\hypertarget{graphic__engine_8c}{}\doxysection{graphic\+\_\+engine.\+c File Reference}
+\label{graphic__engine_8c}\index{graphic\_engine.c@{graphic\_engine.c}}
+
+
+It defines a textual graphic engine.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}graphic\+\_\+engine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libscreen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}space.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for graphic\+\_\+engine.\+c\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Graphic__engine}{\+\_\+\+Graphic\+\_\+engine}}
+\begin{DoxyCompactList}\small\item\em Graphic\+\_\+engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphic__engine_8c_a3cfd3aa62338d12609f6d65bce97e9cd}\label{graphic__engine_8c_a3cfd3aa62338d12609f6d65bce97e9cd}} 
+\#define {\bfseries R\+O\+WS}~30
+\item 
+\mbox{\Hypertarget{graphic__engine_8c_a06c6c391fc11d106e9909f0401b255b1}\label{graphic__engine_8c_a06c6c391fc11d106e9909f0401b255b1}} 
+\#define {\bfseries C\+O\+L\+U\+M\+NS}~84
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ \mbox{\hyperlink{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}{graphic\+\_\+engine\+\_\+create}} ()
+\begin{DoxyCompactList}\small\item\em cretes a graphic\+\_\+engine structure \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}{graphic\+\_\+engine\+\_\+destroy}} (\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ge)
+\begin{DoxyCompactList}\small\item\em delete the content of the graphic\+\_\+engine structure \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}{graphic\+\_\+engine\+\_\+paint\+\_\+game}} (\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ge, \mbox{\hyperlink{struct__Game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em prints the spaces and the graphics of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines a textual graphic engine. 
+
+\begin{DoxyAuthor}{Author}
+Marcos alonso 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/11-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}\label{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_create@{graphic\_engine\_create}}
+\index{graphic\_engine\_create@{graphic\_engine\_create}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_create()}{graphic\_engine\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}}$\ast$ graphic\+\_\+engine\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cretes a graphic\+\_\+engine structure 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+creates a structure Graphic\+\_\+engine and inicilizes it with a new area inside the screen
+
+\begin{DoxyReturn}{Returns}
+la estructure inicialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}\label{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_destroy@{graphic\_engine\_destroy}}
+\index{graphic\_engine\_destroy@{graphic\_engine\_destroy}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_destroy()}{graphic\_engine\_destroy()}}
+{\footnotesize\ttfamily void graphic\+\_\+engine\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{ge }\end{DoxyParamCaption})}
+
+
+
+delete the content of the graphic\+\_\+engine structure 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+delete the content
+
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & a Graphic\+\_\+engine structure we want to reset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}\label{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_paint\_game@{graphic\_engine\_paint\_game}}
+\index{graphic\_engine\_paint\_game@{graphic\_engine\_paint\_game}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_paint\_game()}{graphic\_engine\_paint\_game()}}
+{\footnotesize\ttfamily void graphic\+\_\+engine\+\_\+paint\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{ge,  }\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+prints the spaces and the graphics of the game 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+create all the game graphics\+: map, ant, foof...
+
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & estructure used to create the graphics \\
+\hline
+{\em game} & estructure used for the data game \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,24 @@
+Aclaración: Estas pruebas han sido realizadas mediante el logfile con el listado_de_comandos.txt, y posteriormente han sido explicadasy valoradas.
+
+TAKE: ERROR	-> Prueba correcta y superada con valgrind, la pipa no esta en el espacio.
+TAKE: OK	-> Prueba correcta y superada con valgrind, el grano está en el espacio.
+NEXT: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir al siguiente espacio
+MOVE: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir al sur
+MOVE: ERROR	-> Prueba correcta y superada con valgrind, no hay espacio en la izquierda, por tanto no se puede mover al oeste
+MOVE: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir al este
+TAKE: OK	-> Prueba correcta y superada con valgrind, la miga está en el espacio
+RIGHT: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir a la derecha
+RIGHT: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir a la derecha
+TAKE: OK	-> Prueba correcta y superada con valgrind, la nuez está en el espacio
+RIGHT: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir a la derecha
+MOVE: ERROR	-> Prueba correcta y superada con valgrind, no existe link que nos permita ir al norte
+MOVE: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir al sur
+MOVE: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir al norte
+BACK: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir hacia arriba
+ATTACK: OK	-> Prueba correcta y superada con valgrind, el enemigo está en el espacio y esta vivo
+NEXT: ERROR	-> Prueba correcta y superada con valgrind, el link para ir hacia abajo está cerrado
+BACK: OK	-> Prueba correcta y superada con valgrind, existe link que nos permita ir hacia arriba
+ATTACK: ERROR	-> Prueba correcta y superada con valgrind, el enemigo no está en ese espacio
+DROP: OK	-> Prueba correcta y superada con valgrind, podemos dejar la miga, la cual llevabamos en el inventario
+DROP: ERROR	-> Prueba correcta y superada con valgrind, no podemos dejar la pipa, la cual no llevabamos en el inventario
+EXIT: OK	-> Prueba correcta y superada con valgrind, el juego se ha cerrado

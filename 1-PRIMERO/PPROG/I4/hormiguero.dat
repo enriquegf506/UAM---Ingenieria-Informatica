@@ -1,0 +1,57 @@
+#s:11|Entrada|         |         |         |         |         | Security and the lantern are here| Hall |
+#s:121|Pasillo1|         |         |         |         |         | You can go up, in this space there are two floors| First hallway |
+#s:122|Pasillo2|    _    |\  \___  |\   mo'\_|\ @  _   | \__/ \__| That are the stairs to keep going down, we have an egg and a lamp| Second Hallway |
+#s:123|Pasillo3|         |         |         |         |         | The enemy is here, and killed an ant.| Third hallway |
+#s:124|Pasillo4|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \   /| That is the corridor with all the food| Fourth hallway |
+#s:125|Pasillo5|  ___    |_/   \__ |    o o )|mo^ _ 0o]|__/ \___)| There is a room with an ant with some eggs| Fith hallway |
+#s:126|Pasillo6|         |         |         |         |         | A table is in this place, anything else.| Sixth hallway |
+#s:127|Pasillo7|    V    |  \(")/  |  -(_)-  |o/(_-_)\o|o o\_/o o| There is a beautiful statue of an ant in this space!| seventh hallway |
+#s:128|Pasillo8|         |         |         |         |         | We are very high! | Eighth hallway |
+#s:129|Pasillo9|         |         |         |         |         | We are very high! | Nineth hallway |
+#s:13|Despensa|         |         |         |         |         | The fridge with some food like an apple are in this space | Pantry |
+#s:14|Agujero|         |         |         |         |         | This is just a passage to get to the pantry| Huge hole |
+#o:21|Grano|11| Protein-rich nutritious food |1|-1|-1|0|0|
+#o:22|Pipa|124| The most comun food the ants take|1|-1|-1|0|0|
+#o:23|Miga|125| The favourite one of the ants |1|-1|-1|0|0|
+#o:24|TNT|127| Can open any space |1|-1|13|0|0|
+#o:25|Window|121| Its night and dark outside|0|-1|-1|0|0|
+#o:26|Egg|122| The eggs we want to protect|0|-1|-1|0|0|
+#o:27|Security|11| The watchman is dead|0|-1|-1|0|0|
+#o:28|Lantern|11| Can illuminate if is turned on|1|-1|-1|1|0|
+#o:29|Torch|125| Only illuminates with fire|1|-1|-1|0|0|
+#o:30|Fire|125| Can get if you have a torch|1|29|-1|1|1|
+#o:31|Table|126| Broken table|0|-1|-1|0|0|
+#o:32|Lamp|122| The lamp is broken and cant illuminate|0|-1|-1|0|0|
+#o:33|Door|125| A misterious closed door|0|-1|-1|0|0|
+#o:34|Key|121| It can open a closed space|1|-1|13|0|0|
+#o:35|Ant|123|The ant killed that ant|0|-1|-1|0|0|
+#o:36|Rug|127| The Tv is also broken|0|-1|-1|0|0|
+#o:37|Fridge|13| Where the food is conserved|0|-1|-1|0|0|
+#o:38|Apple|13| Very important and nutritious fruit|1|-1|-1|0|0|
+#o:39|Stairs|123| To move down |0|-1|-1|0|0|
+#o:40|Curtain|121| Black and dirty curtain| 0|-1|-1|0|0|
+#p:1|ant|11|5|5|
+#e:2|spider|123|5|
+#l:31|Entrada|11|121|2|1|
+#l:32|Pasillo1|121|122|2|1|
+#l:33|Pasillo1.1|121|11|1|1|
+#l:34|Pasillo2|122|123|2|1|
+#l:35|Pasillo2.1|122|121|1|1|
+#l:36|Pasillo2.2|122|125|3|1|
+#l:37|Pasillo3|123|124|2|2|
+#l:38|Pasillo3.1|123|122|1|1|
+#l:39|Pasillo4|124|13|2|1|
+#l:310|Pasillo4.1|124|123|1|1|
+#l:311|Despensa|13|124|1|1|
+#l:312|Pasillo5|125|122|4|1|
+#l:313|Pasillo5.1|125|126|3|1|
+#l:314|Pasillo6|126|125|4|1|
+#l:315|Pasillo6.1|126|127|3|1|
+#l:316|Pasillo7|127|126|4|1|
+#l:317|Pasillo7.1|127|14|3|1|
+#l:318|Agujero|14|127|4|1|
+#l:319|Agujero1.1|14|13|2|1|
+#l:320|Pasillo1.2|121|128|5|1|
+#l:321|Pasillo8|128|129|2|1|
+#l:323|Pasillo8.1|128|121|6|1|
+#l:322|Pasillo9|129|128|1|1|    

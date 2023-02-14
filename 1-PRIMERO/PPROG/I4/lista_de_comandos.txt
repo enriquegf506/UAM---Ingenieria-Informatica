@@ -1,0 +1,17 @@
+take Lantern
+turnon lantern
+inspect space
+move south
+take key
+move up
+move down
+move south
+move south
+attack
+inspect ant
+open pasillo3 with key
+move south
+move south
+drop key
+turnoff lantern
+drop lantern

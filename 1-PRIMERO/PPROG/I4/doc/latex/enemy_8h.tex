@@ -1,0 +1,337 @@
+\hypertarget{enemy_8h}{}\doxysection{enemy.\+h File Reference}
+\label{enemy_8h}\index{enemy.h@{enemy.h}}
+
+
+It defines the enemy interface.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for enemy.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{enemy_8h_a0de553ca923167f302b1c5fb80b7c67b}{E\+N\+\_\+\+H\+E\+A\+L\+TH}}~10
+\item 
+\#define \mbox{\hyperlink{enemy_8h_a85fe7dfc8d35e0e6ee68ceb22ab3b57b}{E\+N\+E\+M\+Y\+\_\+\+ID}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__Enemy}{\+\_\+\+Enemy}} \mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$ \mbox{\hyperlink{enemy_8h_a56fde4e35c97103fb78dce2cb1ee0416}{enemy\+\_\+create}} (Id id)
+\begin{DoxyCompactList}\small\item\em It creates a player. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a45ea2d803df5080ec26cf9cfe2d9bfae}{enemy\+\_\+destroy}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It destroys an enemy. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a9bf1d7b024c9357038d44494d4cfdc04}{enemy\+\_\+set\+\_\+id}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy, Id id)
+\begin{DoxyCompactList}\small\item\em It sets the name of a enemy. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{enemy_8h_aa07e34cdfc9c334fce425d5496ab0cfd}{enemy\+\_\+get\+\_\+id}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It gets the id of an enemy. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a80766a877f0c2b8c09227a7250ffd742}{enemy\+\_\+set\+\_\+name}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em It sets the name of an enemy. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{enemy_8h_ac9f9a60121098546e1129891e26bfb77}{enemy\+\_\+get\+\_\+name}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It gets the name of a enemy. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{enemy_8h_a909401b9002301611512d8a488c8c53c}{enemy\+\_\+get\+\_\+location}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It gets the id location of the enemy. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a98a2fac262a596ae62af76288f2a3447}{enemy\+\_\+set\+\_\+location}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy, Id id)
+\begin{DoxyCompactList}\small\item\em It sets the id of the enemy location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{enemy_8h_acffe1f3073056b62ff34224bc986bbbf}{enemy\+\_\+get\+\_\+health}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It gets the enemy\textquotesingle{}s health. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a024da73a750adefcac3c4e5bab4e3074}{enemy\+\_\+set\+\_\+health}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy, int health)
+\begin{DoxyCompactList}\small\item\em It sets the enemy\textquotesingle{}s health. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{enemy_8h_a2d65c8fc2ba940ab4ad5b7380d9cd5e4}{enemy\+\_\+print}} (\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em It prints the enemy information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines the enemy interface. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27-\/02-\/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{enemy_8h_a0de553ca923167f302b1c5fb80b7c67b}\label{enemy_8h_a0de553ca923167f302b1c5fb80b7c67b}} 
+\index{enemy.h@{enemy.h}!EN\_HEALTH@{EN\_HEALTH}}
+\index{EN\_HEALTH@{EN\_HEALTH}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{EN\_HEALTH}{EN\_HEALTH}}
+{\footnotesize\ttfamily \#define E\+N\+\_\+\+H\+E\+A\+L\+TH~10}
+
+Macro for enemy\textquotesingle{}s health \mbox{\Hypertarget{enemy_8h_a85fe7dfc8d35e0e6ee68ceb22ab3b57b}\label{enemy_8h_a85fe7dfc8d35e0e6ee68ceb22ab3b57b}} 
+\index{enemy.h@{enemy.h}!ENEMY\_ID@{ENEMY\_ID}}
+\index{ENEMY\_ID@{ENEMY\_ID}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{ENEMY\_ID}{ENEMY\_ID}}
+{\footnotesize\ttfamily \#define E\+N\+E\+M\+Y\+\_\+\+ID~1}
+
+Macro for enemy\textquotesingle{}s id 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{enemy_8h_ab72816316237b83a76b2e43d681befb9}\label{enemy_8h_ab72816316237b83a76b2e43d681befb9}} 
+\index{enemy.h@{enemy.h}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{Enemy}{Enemy}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__Enemy}{\+\_\+\+Enemy}} \mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}}}
+
+Structure for the enemy 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{enemy_8h_a56fde4e35c97103fb78dce2cb1ee0416}\label{enemy_8h_a56fde4e35c97103fb78dce2cb1ee0416}} 
+\index{enemy.h@{enemy.h}!enemy\_create@{enemy\_create}}
+\index{enemy\_create@{enemy\_create}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_create()}{enemy\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}}$\ast$ enemy\+\_\+create (\begin{DoxyParamCaption}\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It creates a player. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+enemy\+\_\+create allocates memory for a new enemy
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the identification number for the new enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new enemy initialized if everything goes well or N\+U\+LL if there was some mistake
+\end{DoxyReturn}
+enemy\+\_\+create allocates memory for a new enemy and initializes its members \mbox{\Hypertarget{enemy_8h_a45ea2d803df5080ec26cf9cfe2d9bfae}\label{enemy_8h_a45ea2d803df5080ec26cf9cfe2d9bfae}} 
+\index{enemy.h@{enemy.h}!enemy\_destroy@{enemy\_destroy}}
+\index{enemy\_destroy@{enemy\_destroy}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_destroy()}{enemy\_destroy()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It destroys an enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+enemy\+\_\+destroy frees the previous memory allocation for a enemy 
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy that must be destroyed ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+enemy\+\_\+destroy frees the previous memory allocation for an enemy \mbox{\Hypertarget{enemy_8h_acffe1f3073056b62ff34224bc986bbbf}\label{enemy_8h_acffe1f3073056b62ff34224bc986bbbf}} 
+\index{enemy.h@{enemy.h}!enemy\_get\_health@{enemy\_get\_health}}
+\index{enemy\_get\_health@{enemy\_get\_health}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_get\_health()}{enemy\_get\_health()}}
+{\footnotesize\ttfamily int enemy\+\_\+get\+\_\+health (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It gets the enemy\textquotesingle{}s health. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enemy\textquotesingle{}s health or N\+U\+LL if something goes wrong and the enemy\textquotesingle{}s health
+\end{DoxyReturn}
+It sets the health points of an enemy \mbox{\Hypertarget{enemy_8h_aa07e34cdfc9c334fce425d5496ab0cfd}\label{enemy_8h_aa07e34cdfc9c334fce425d5496ab0cfd}} 
+\index{enemy.h@{enemy.h}!enemy\_get\_id@{enemy\_get\_id}}
+\index{enemy\_get\_id@{enemy\_get\_id}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_get\_id()}{enemy\_get\_id()}}
+{\footnotesize\ttfamily Id enemy\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It gets the id of an enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of the enemy
+\end{DoxyReturn}
+It gets the id of an enemy \mbox{\Hypertarget{enemy_8h_a909401b9002301611512d8a488c8c53c}\label{enemy_8h_a909401b9002301611512d8a488c8c53c}} 
+\index{enemy.h@{enemy.h}!enemy\_get\_location@{enemy\_get\_location}}
+\index{enemy\_get\_location@{enemy\_get\_location}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_get\_location()}{enemy\_get\_location()}}
+{\footnotesize\ttfamily Id enemy\+\_\+get\+\_\+location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It gets the id location of the enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id number of the enemy location
+\end{DoxyReturn}
+It gets the location of an enemy \mbox{\Hypertarget{enemy_8h_ac9f9a60121098546e1129891e26bfb77}\label{enemy_8h_ac9f9a60121098546e1129891e26bfb77}} 
+\index{enemy.h@{enemy.h}!enemy\_get\_name@{enemy\_get\_name}}
+\index{enemy\_get\_name@{enemy\_get\_name}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_get\_name()}{enemy\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ enemy\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It gets the name of a enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string with the name of the enemy
+\end{DoxyReturn}
+It gets the name of an enemy \mbox{\Hypertarget{enemy_8h_a2d65c8fc2ba940ab4ad5b7380d9cd5e4}\label{enemy_8h_a2d65c8fc2ba940ab4ad5b7380d9cd5e4}} 
+\index{enemy.h@{enemy.h}!enemy\_print@{enemy\_print}}
+\index{enemy\_print@{enemy\_print}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_print()}{enemy\_print()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+It prints the enemy information. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+This fucntion shows the id, the name, the location and health of the enemy 
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It prints the enemy information \mbox{\Hypertarget{enemy_8h_a024da73a750adefcac3c4e5bab4e3074}\label{enemy_8h_a024da73a750adefcac3c4e5bab4e3074}} 
+\index{enemy.h@{enemy.h}!enemy\_set\_health@{enemy\_set\_health}}
+\index{enemy\_set\_health@{enemy\_set\_health}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_set\_health()}{enemy\_set\_health()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+set\+\_\+health (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy,  }\item[{int}]{health }\end{DoxyParamCaption})}
+
+
+
+It sets the enemy\textquotesingle{}s health. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+{\em health} & enemy\textquotesingle{}s health \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the health points of an enemy \mbox{\Hypertarget{enemy_8h_a9bf1d7b024c9357038d44494d4cfdc04}\label{enemy_8h_a9bf1d7b024c9357038d44494d4cfdc04}} 
+\index{enemy.h@{enemy.h}!enemy\_set\_id@{enemy\_set\_id}}
+\index{enemy\_set\_id@{enemy\_set\_id}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_set\_id()}{enemy\_set\_id()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+set\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets the name of a enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+{\em id} & the id to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the id of an enemy \mbox{\Hypertarget{enemy_8h_a98a2fac262a596ae62af76288f2a3447}\label{enemy_8h_a98a2fac262a596ae62af76288f2a3447}} 
+\index{enemy.h@{enemy.h}!enemy\_set\_location@{enemy\_set\_location}}
+\index{enemy\_set\_location@{enemy\_set\_location}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_set\_location()}{enemy\_set\_location()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+set\+\_\+location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets the id of the enemy location. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+{\em id} & the id number of the enemy location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the location of an enemy \mbox{\Hypertarget{enemy_8h_a80766a877f0c2b8c09227a7250ffd742}\label{enemy_8h_a80766a877f0c2b8c09227a7250ffd742}} 
+\index{enemy.h@{enemy.h}!enemy\_set\_name@{enemy\_set\_name}}
+\index{enemy\_set\_name@{enemy\_set\_name}!enemy.h@{enemy.h}}
+\doxysubsubsection{\texorpdfstring{enemy\_set\_name()}{enemy\_set\_name()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US enemy\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$}]{enemy,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+It sets the name of an enemy. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & a pointer to the enemy \\
+\hline
+{\em name} & a string with the name to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the name of an enemy 

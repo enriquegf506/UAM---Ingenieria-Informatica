@@ -1,0 +1,22 @@
+take pipa
+take grano
+next
+move south
+move west
+move east
+take miga
+right
+right
+take nuez
+right
+move north
+move south
+move north
+back
+attack
+next
+back
+attack
+drop miga
+drop pipa
+exit

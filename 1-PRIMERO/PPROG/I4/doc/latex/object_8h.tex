@@ -1,0 +1,516 @@
+\hypertarget{object_8h}{}\doxysection{object.\+h File Reference}
+\label{object_8h}\index{object.h@{object.h}}
+
+
+It defines the object interface.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for object.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{object_8h_acdc7844fbd4d45737d4aa56834d37829}\label{object_8h_acdc7844fbd4d45737d4aa56834d37829}} 
+\#define {\bfseries M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__Object}{\+\_\+\+Object}} \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$ \mbox{\hyperlink{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}{object\+\_\+create}} (Id id)
+\begin{DoxyCompactList}\small\item\em It creates a new object. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_a19d6d51fee809e3801893eefc789f4b4}{object\+\_\+destroy}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It destroys an object. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{object_8h_ac5af152381a21853c6a28cc120e8e7fe}{object\+\_\+get\+\_\+id}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets the id of an object. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_a8c03688ce63530d822523f23066960ee}{object\+\_\+set\+\_\+id}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, Id id)
+\begin{DoxyCompactList}\small\item\em It sets the name of an object. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_ac15dc062c857503ec0ca66037caffd80}{object\+\_\+set\+\_\+name}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em It sets the name of an object. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{object_8h_a19320eebcbbd38533a18c741b804b584}{object\+\_\+get\+\_\+name}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets the name of an object. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}{object\+\_\+print}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It prints an object data. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}{object\+\_\+set\+\_\+description}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em It sets the object\textquotesingle{}s description. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{object_8h_ab92f583fcb6e3000ebe48cc04c5853cd}{object\+\_\+get\+\_\+description}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets the object\textquotesingle{}s description. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{object_8h_a9d40c68527b9f7b8264065914069b5e2}{object\+\_\+get\+\_\+dependency}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets the id dependency of an object. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}{object\+\_\+set\+\_\+dependency}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, Id id)
+\begin{DoxyCompactList}\small\item\em It sets the id dependency of an object. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{object_8h_a49dbce205db36230c53fb0ccf0a73174}{object\+\_\+get\+\_\+open}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets the id id of link the object can open. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_ab62e9c302600d7c9a61392fff1b06534}{object\+\_\+set\+\_\+open}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, Id id)
+\begin{DoxyCompactList}\small\item\em It sets the id of link the object can open. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{object_8h_a013409023095272ee75cf6f13b680cf4}{object\+\_\+get\+\_\+movable}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets if the object can move. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_ad3cb9ad5ad1f578e87c799bcf286863d}{object\+\_\+set\+\_\+movable}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, B\+O\+OL mov)
+\begin{DoxyCompactList}\small\item\em It sets if the object can move. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{object_8h_a98241a6ff6c17286b614eb5757bd3752}{object\+\_\+get\+\_\+illuminate}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets if the object can illuminate. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_a004280e4afc66e2ad17c8de5d0789f89}{object\+\_\+set\+\_\+illuminate}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, B\+O\+OL ilu)
+\begin{DoxyCompactList}\small\item\em It sets if the object can illuminate. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{object_8h_ad2fa3f15748ade7044ede1db75cc01fc}{object\+\_\+get\+\_\+turnedon}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It gets if the object is turned on the light. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{object_8h_af62cd237ac8a95f714a4431c09f78473}{object\+\_\+set\+\_\+turnedon}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, B\+O\+OL turned)
+\begin{DoxyCompactList}\small\item\em It sets if the object is turned on the light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines the object interface. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/11-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}\label{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}} 
+\index{object.h@{object.h}!Object@{Object}}
+\index{Object@{Object}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__Object}{\+\_\+\+Object}} \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}}
+
+Structure for the object 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}\label{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}} 
+\index{object.h@{object.h}!object\_create@{object\_create}}
+\index{object\_create@{object\_create}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_create()}{object\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}$\ast$ object\+\_\+create (\begin{DoxyParamCaption}\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It creates a new object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+object\+\_\+create allocates memory for a new object 
+\begin{DoxyParams}{Parameters}
+{\em id} & the identification number for the new object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new object, initialized
+\end{DoxyReturn}
+object\+\_\+create allocates memory for a new object and initializes its members \mbox{\Hypertarget{object_8h_a19d6d51fee809e3801893eefc789f4b4}\label{object_8h_a19d6d51fee809e3801893eefc789f4b4}} 
+\index{object.h@{object.h}!object\_destroy@{object\_destroy}}
+\index{object\_destroy@{object\_destroy}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_destroy()}{object\_destroy()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It destroys an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+object\+\_\+destroy frees the previous memory allocation for an object 
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object that must be destroyed ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+object\+\_\+destroy frees the previous memory allocation for an object \mbox{\Hypertarget{object_8h_a9d40c68527b9f7b8264065914069b5e2}\label{object_8h_a9d40c68527b9f7b8264065914069b5e2}} 
+\index{object.h@{object.h}!object\_get\_dependency@{object\_get\_dependency}}
+\index{object\_get\_dependency@{object\_get\_dependency}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_dependency()}{object\_get\_dependency()}}
+{\footnotesize\ttfamily Id object\+\_\+get\+\_\+dependency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets the id dependency of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id dependency of object
+\end{DoxyReturn}
+It gets the id dependency of an object \mbox{\Hypertarget{object_8h_ab92f583fcb6e3000ebe48cc04c5853cd}\label{object_8h_ab92f583fcb6e3000ebe48cc04c5853cd}} 
+\index{object.h@{object.h}!object\_get\_description@{object\_get\_description}}
+\index{object\_get\_description@{object\_get\_description}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_description()}{object\_get\_description()}}
+{\footnotesize\ttfamily char$\ast$ object\+\_\+get\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets the object\textquotesingle{}s description. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object description
+\end{DoxyReturn}
+It sets the object description \mbox{\Hypertarget{object_8h_ac5af152381a21853c6a28cc120e8e7fe}\label{object_8h_ac5af152381a21853c6a28cc120e8e7fe}} 
+\index{object.h@{object.h}!object\_get\_id@{object\_get\_id}}
+\index{object\_get\_id@{object\_get\_id}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_id()}{object\_get\_id()}}
+{\footnotesize\ttfamily Id object\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets the id of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of object
+\end{DoxyReturn}
+It gets the id of an object \mbox{\Hypertarget{object_8h_a98241a6ff6c17286b614eb5757bd3752}\label{object_8h_a98241a6ff6c17286b614eb5757bd3752}} 
+\index{object.h@{object.h}!object\_get\_illuminate@{object\_get\_illuminate}}
+\index{object\_get\_illuminate@{object\_get\_illuminate}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_illuminate()}{object\_get\_illuminate()}}
+{\footnotesize\ttfamily B\+O\+OL object\+\_\+get\+\_\+illuminate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets if the object can illuminate. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if can illuminate and false if it cant
+\end{DoxyReturn}
+It gets the bool if the object can illuminate \mbox{\Hypertarget{object_8h_a013409023095272ee75cf6f13b680cf4}\label{object_8h_a013409023095272ee75cf6f13b680cf4}} 
+\index{object.h@{object.h}!object\_get\_movable@{object\_get\_movable}}
+\index{object\_get\_movable@{object\_get\_movable}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_movable()}{object\_get\_movable()}}
+{\footnotesize\ttfamily B\+O\+OL object\+\_\+get\+\_\+movable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets if the object can move. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if is movable and false if it isnt
+\end{DoxyReturn}
+It gets the bool if the object can be moved \mbox{\Hypertarget{object_8h_a19320eebcbbd38533a18c741b804b584}\label{object_8h_a19320eebcbbd38533a18c741b804b584}} 
+\index{object.h@{object.h}!object\_get\_name@{object\_get\_name}}
+\index{object\_get\_name@{object\_get\_name}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_name()}{object\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ object\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets the name of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string with the name of the object
+\end{DoxyReturn}
+It gets the name of an object \mbox{\Hypertarget{object_8h_a49dbce205db36230c53fb0ccf0a73174}\label{object_8h_a49dbce205db36230c53fb0ccf0a73174}} 
+\index{object.h@{object.h}!object\_get\_open@{object\_get\_open}}
+\index{object\_get\_open@{object\_get\_open}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_open()}{object\_get\_open()}}
+{\footnotesize\ttfamily Id object\+\_\+get\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets the id id of link the object can open. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of link the object can open
+\end{DoxyReturn}
+It gets the id of the link it can open \mbox{\Hypertarget{object_8h_ad2fa3f15748ade7044ede1db75cc01fc}\label{object_8h_ad2fa3f15748ade7044ede1db75cc01fc}} 
+\index{object.h@{object.h}!object\_get\_turnedon@{object\_get\_turnedon}}
+\index{object\_get\_turnedon@{object\_get\_turnedon}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_turnedon()}{object\_get\_turnedon()}}
+{\footnotesize\ttfamily B\+O\+OL object\+\_\+get\+\_\+turnedon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It gets if the object is turned on the light. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the light is turned on and false if it isnt
+\end{DoxyReturn}
+It gets the bool if the object is turned on \mbox{\Hypertarget{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}\label{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}} 
+\index{object.h@{object.h}!object\_print@{object\_print}}
+\index{object\_print@{object\_print}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_print()}{object\_print()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It prints an object data. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a status
+\end{DoxyReturn}
+It prints the object information \mbox{\Hypertarget{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}\label{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}} 
+\index{object.h@{object.h}!object\_set\_dependency@{object\_set\_dependency}}
+\index{object\_set\_dependency@{object\_set\_dependency}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_dependency()}{object\_set\_dependency()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+dependency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets the id dependency of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em id} & the id dependency of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the id dependency of an object \mbox{\Hypertarget{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}\label{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}} 
+\index{object.h@{object.h}!object\_set\_description@{object\_set\_description}}
+\index{object\_set\_description@{object\_set\_description}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_description()}{object\_set\_description()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+
+
+It sets the object\textquotesingle{}s description. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em description} & the new description \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a status
+\end{DoxyReturn}
+It sets the object description \mbox{\Hypertarget{object_8h_a8c03688ce63530d822523f23066960ee}\label{object_8h_a8c03688ce63530d822523f23066960ee}} 
+\index{object.h@{object.h}!object\_set\_id@{object\_set\_id}}
+\index{object\_set\_id@{object\_set\_id}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_id()}{object\_set\_id()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets the name of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em id} & the id of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the id of an object \mbox{\Hypertarget{object_8h_a004280e4afc66e2ad17c8de5d0789f89}\label{object_8h_a004280e4afc66e2ad17c8de5d0789f89}} 
+\index{object.h@{object.h}!object\_set\_illuminate@{object\_set\_illuminate}}
+\index{object\_set\_illuminate@{object\_set\_illuminate}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_illuminate()}{object\_set\_illuminate()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+illuminate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{B\+O\+OL}]{ilu }\end{DoxyParamCaption})}
+
+
+
+It sets if the object can illuminate. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em ilu} & Bool indicates if it can illuminate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the bool if the object can illuminate \mbox{\Hypertarget{object_8h_ad3cb9ad5ad1f578e87c799bcf286863d}\label{object_8h_ad3cb9ad5ad1f578e87c799bcf286863d}} 
+\index{object.h@{object.h}!object\_set\_movable@{object\_set\_movable}}
+\index{object\_set\_movable@{object\_set\_movable}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_movable()}{object\_set\_movable()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+movable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{B\+O\+OL}]{mov }\end{DoxyParamCaption})}
+
+
+
+It sets if the object can move. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em mov} & Bool indicates if it can move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the bool if the object can be moved \mbox{\Hypertarget{object_8h_ac15dc062c857503ec0ca66037caffd80}\label{object_8h_ac15dc062c857503ec0ca66037caffd80}} 
+\index{object.h@{object.h}!object\_set\_name@{object\_set\_name}}
+\index{object\_set\_name@{object\_set\_name}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_name()}{object\_set\_name()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+It sets the name of an object. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em name} & a string with the name to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the name of an object \mbox{\Hypertarget{object_8h_ab62e9c302600d7c9a61392fff1b06534}\label{object_8h_ab62e9c302600d7c9a61392fff1b06534}} 
+\index{object.h@{object.h}!object\_set\_open@{object\_set\_open}}
+\index{object\_set\_open@{object\_set\_open}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_open()}{object\_set\_open()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets the id of link the object can open. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em id} & the id of link the object can open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the id of the link it can open \mbox{\Hypertarget{object_8h_af62cd237ac8a95f714a4431c09f78473}\label{object_8h_af62cd237ac8a95f714a4431c09f78473}} 
+\index{object.h@{object.h}!object\_set\_turnedon@{object\_set\_turnedon}}
+\index{object\_set\_turnedon@{object\_set\_turnedon}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_turnedon()}{object\_set\_turnedon()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US object\+\_\+set\+\_\+turnedon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{B\+O\+OL}]{turned }\end{DoxyParamCaption})}
+
+
+
+It sets if the object is turned on the light. 
+
+\begin{DoxyAuthor}{Author}
+Enrique Gómez
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a pointer to the object \\
+\hline
+{\em turned} & Bool indicates if it is turned on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It gets the bool if the object is turned on 

@@ -1,0 +1,213 @@
+/** 
+ * @brief It declares the tests for the space module
+ * 
+ * @file space_test.h
+ * @author Profesores Pprog
+ * @version 2.0 
+ * @date 09-03-2021
+ * @copyright GNU Public License
+ */
+
+#ifndef SPACE_TEST_H
+#define SPACE_TEST_H
+#include "set.h"
+/**
+ * @test Test space creation
+ * @pre Space ID 
+ * @post Non NULL pointer to space 
+ */
+void test1_space_create();
+
+/**
+ * @test Test space creation
+ * @pre Space ID 
+ * @post Space_ID == Supplied Space Id
+ */
+void test2_space_create();
+
+/**
+ * @test Test function for space_name setting
+ * @pre String with space name
+ * @post Ouput==OK 
+ */
+void test1_space_set_name();
+
+/**
+ * @test Test function for space_name setting
+ * @pre pointer to space = NULL 
+ * @post Output==ERROR
+ */
+void test2_space_set_name();
+
+/**
+ * @test Test function for space_name setting
+ * @pre pointer to space_name = NULL (point to space = NON NULL) 
+ * @post Output==ERROR
+ */
+void test3_space_set_name();
+
+/**
+ * @brief Test function for space_id getting
+ * @pre space 
+ *@post Output==space ID
+ */
+void test1_space_get_id();
+
+
+/**
+ * @brief Test function for space_id getting
+ * @pre space =NULL
+ *@post Output==NO_ID
+ */
+void test2_space_get_id();
+
+
+/**
+ * @brief Test function for space_object setting
+ * @pre object = TRUE
+ *@post Output==OK
+ */
+void test1_space_add_object();
+
+
+/**
+ * @brief Test function for space_object setting
+ * @pre space=NULL
+ *@post Output==ERROR
+ */
+void test2_space_add_object();
+
+
+/**
+ * @brief Test function for space_name getting
+ * @pre space, name= 'adios'
+ *@post Output==0
+ */
+void test1_space_get_name();
+
+ /**
+ * @brief Test function for space_name getting
+ * @pre space=NULL
+ *@post Output==NULL
+ */
+void test2_space_get_name();
+ 
+ /**
+ * @brief Test function for space_object getting
+ * @pre space ID
+ *@post Output==FALSE
+ */
+void test1_space_get_object();
+
+ 
+ /**
+ * @brief Test function for space_object getting
+ * @pre space ID
+ *@post Output==TRUE
+ */
+void test2_space_get_object();
+
+ 
+ /**
+ * @brief Test function for space_object getting
+ * @pre space=NULL
+ *@post Output==FALSE
+ */
+void test3_space_get_object();
+/**
+ * @test Test function for space_graphic description setting
+ * @pre String with space gdesc
+ * @post Ouput==OK 
+ */
+void test1_space_set_gdesc();
+/**
+ * @test Test function for space_graphic description setting
+ * @pre pointer to space = NULL 
+ * @post Output==ERROR
+ */
+void test2_space_set_gdesc();
+/**
+ * @test Test function for space_graphic_description getting
+ * @pre String with space gdesc=="hola"
+ * @post Output == "hola"
+ */
+void test1_space_get_gdesc();
+/**
+ * @test Test function for space_graphic_description getting
+ * @pre pointer to space=NULL
+ * @post Output == NULL
+ */
+void test2_space_get_gdesc();
+/**
+ * @test Test function for space_object containing
+ * @pre pointer to space, and id of the object==6
+ * @post Output == OK
+ */
+void test1_space_contain_object();
+/**
+ * @test Test function for space_object containing
+ * @pre pointer to space=NULL
+ * @post Output == ERROR
+ */
+void test2_space_contain_object();
+/**
+ * @test Test function for space_object deleting
+ * @pre pointer to space, and id of the object==6
+ * @post Output == OK
+ */
+void test1_space_del_object();
+/**
+ * @test Test function for space_object deleting
+ * @pre pointer to space=NULL
+ * @post Output == ERROR
+ */
+void test2_space_del_object();
+/**
+ * @test Test function for space_objects getting
+ * @pre pointer to space, pointer to set, id object=6
+ * @post Output == set whith object added
+ */
+void test1_space_get_objects();
+/** @test Test function for space_objects getting
+ * @pre pointer to space=NULL
+ * @post Output == NULL
+ */
+void test2_space_get_objects();
+
+/**
+ * @test Test function for space_description setting
+ * @pre space pointer to space, description == "hola"
+ * @post Output==OK
+ */
+void test1_space_set_description();
+/**
+ * @test Test function for space_description setting
+ * @pre space pointer to space==NULL, description == "hola"
+ * @post Output==ERROR
+ */
+void test2_space_set_description();
+/**
+ * @test Test function for space_description Getting
+ * @pre space pointer to space, description == "hola"
+ * @post Output=="hola"
+ */
+void test1_space_get_description();
+/**
+ * @test Test function for space_description setting
+ * @pre space pointer to space==NULL
+ * @post Output==NULL
+ */
+void test2_space_get_description();
+/**
+ * @brief Test function for space destroying
+ * @pre Space pointer to space
+ *@post Output==OK
+ */
+void test1_space_destroy();
+/**
+ * @brief Test function for space destroying
+ * @pre space=NULL
+ *@post Output==ERROR
+ */
+void test2_space_destroy();
+#endif

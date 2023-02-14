@@ -1,0 +1,92 @@
+\hypertarget{struct__Game}{}\doxysection{\+\_\+\+Game Struct Reference}
+\label{struct__Game}\index{\_Game@{\_Game}}
+
+
+Game.  
+
+
+
+
+Collaboration diagram for \+\_\+\+Game\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$ \mbox{\hyperlink{struct__Game_ac163b5ee297e72f2695d6cb0c21c9e77}{pl}}
+\item 
+\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$ \mbox{\hyperlink{struct__Game_a0fdc2c8b650116327d1eae725ba45551}{obj}} \mbox{[}M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS\mbox{]}
+\item 
+\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$ \mbox{\hyperlink{struct__Game_a8b501e32dc748817cbab42e1d8ea6894}{spaces}} \mbox{[}M\+A\+X\+\_\+\+S\+P\+A\+C\+ES\mbox{]}
+\item 
+\mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} \mbox{\hyperlink{struct__Game_a27727b50ea0904a1fe9e1c55c27f2cf1}{last\+\_\+cmd}}
+\item 
+\mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$ \mbox{\hyperlink{struct__Game_a76ba27547f2bd8f038ca84479f8db7b9}{enemy}}
+\item 
+\mbox{\hyperlink{struct__Link}{Link}} $\ast$ \mbox{\hyperlink{struct__Game_a24bb368e94f6fab470d0cefa9a76ed29}{link}} \mbox{[}M\+A\+X\+\_\+\+L\+I\+N\+KS\mbox{]}
+\item 
+char \mbox{\hyperlink{struct__Game_a531b243adcc0d36c6b45b938f5d9dcb9}{description}} \mbox{[}W\+O\+R\+D\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{struct__Game_acf65057efd398804afc213ecc293d441}{state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game. 
+
+This struct stores all the information of the game. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct__Game_a531b243adcc0d36c6b45b938f5d9dcb9}\label{struct__Game_a531b243adcc0d36c6b45b938f5d9dcb9}} 
+\index{\_Game@{\_Game}!description@{description}}
+\index{description@{description}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily char \+\_\+\+Game\+::description}
+
+char pointer, the description of the game \mbox{\Hypertarget{struct__Game_a76ba27547f2bd8f038ca84479f8db7b9}\label{struct__Game_a76ba27547f2bd8f038ca84479f8db7b9}} 
+\index{\_Game@{\_Game}!enemy@{enemy}}
+\index{enemy@{enemy}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{enemy}{enemy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enemy_8h_ab72816316237b83a76b2e43d681befb9}{Enemy}} $\ast$ \+\_\+\+Game\+::enemy}
+
+enemy pointer to enemy, the enemy of the game \mbox{\Hypertarget{struct__Game_a27727b50ea0904a1fe9e1c55c27f2cf1}\label{struct__Game_a27727b50ea0904a1fe9e1c55c27f2cf1}} 
+\index{\_Game@{\_Game}!last\_cmd@{last\_cmd}}
+\index{last\_cmd@{last\_cmd}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{last\_cmd}{last\_cmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} \+\_\+\+Game\+::last\+\_\+cmd}
+
+Last comand used \mbox{\Hypertarget{struct__Game_a24bb368e94f6fab470d0cefa9a76ed29}\label{struct__Game_a24bb368e94f6fab470d0cefa9a76ed29}} 
+\index{\_Game@{\_Game}!link@{link}}
+\index{link@{link}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{link}{link}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Link}{Link}} $\ast$ \+\_\+\+Game\+::link}
+
+Array of pointers to the link \mbox{\Hypertarget{struct__Game_a0fdc2c8b650116327d1eae725ba45551}\label{struct__Game_a0fdc2c8b650116327d1eae725ba45551}} 
+\index{\_Game@{\_Game}!obj@{obj}}
+\index{obj@{obj}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$ \+\_\+\+Game\+::obj}
+
+Array of pointers to the object \mbox{\Hypertarget{struct__Game_ac163b5ee297e72f2695d6cb0c21c9e77}\label{struct__Game_ac163b5ee297e72f2695d6cb0c21c9e77}} 
+\index{\_Game@{\_Game}!pl@{pl}}
+\index{pl@{pl}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{pl}{pl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$ \+\_\+\+Game\+::pl}
+
+pl pointer to player, the player of the game \mbox{\Hypertarget{struct__Game_a8b501e32dc748817cbab42e1d8ea6894}\label{struct__Game_a8b501e32dc748817cbab42e1d8ea6894}} 
+\index{\_Game@{\_Game}!spaces@{spaces}}
+\index{spaces@{spaces}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{spaces}{spaces}}
+{\footnotesize\ttfamily \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$ \+\_\+\+Game\+::spaces}
+
+Array of pointers to the space \mbox{\Hypertarget{struct__Game_acf65057efd398804afc213ecc293d441}\label{struct__Game_acf65057efd398804afc213ecc293d441}} 
+\index{\_Game@{\_Game}!state@{state}}
+\index{state@{state}!\_Game@{\_Game}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US \+\_\+\+Game\+::state}
+
+The state of the command 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{game_8c}{game.\+c}}\item 
+\mbox{\hyperlink{game__loop_8c}{game\+\_\+loop.\+c}}\end{DoxyCompactItemize}

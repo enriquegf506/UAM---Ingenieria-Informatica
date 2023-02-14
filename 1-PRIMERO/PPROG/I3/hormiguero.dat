@@ -1,0 +1,35 @@
+#s:11|Entrada|         |         |         |         |         | No graphic description added.|
+#s:121|Pasillo 1|         |         |         |         |         | No graphic description added.|
+#s:122|Pasillo 2|    _    |\  \___  |\   mo'\_|\ @  _   | \__/ \__| That are the stairs to keep going down|
+#s:123|Pasillo 3|         |         |         |         |         | No graphic description added.|
+#s:124|Pasillo 4|  ___   _|_/   \_/ |     o 0 |mo'_ 0o8o|__/ \   /| That is the corridor with all the food|
+#s:125|Pasillo 5|  ___    |_/   \__ |    o o )|mo^ _ 0o]|__/ \___)| There is a room with an ant with some eggs|
+#s:126|Pasillo 6|         |         |         |         |         | No graphic description added.|
+#s:127|Pasillo 7|    V    |  \(")/  |  -(_)-  |o/(_-_)\o|o o\_/o o| There is a beautiful statue of an ant in this space!|
+#s:13|Despensa|         |         |         |         |         | No graphic description added.|
+#s:14|Agujero|         |         |         |         |         | No graphic description added.|
+#o:21|Grano|11| Protein-rich nutritious food |
+#o:22|Pipa|124| The most comun food the ants take|
+#o:23|Miga|125| The favourite one of the ants |
+#o:24|Nuez|127| Very unusual but very healthy |
+#p:1|ant|11|5|5|
+#e:2|spider|123|5|
+#l:31|Entrada|11|121|2|1|
+#l:32|Pasillo 1|121|122|2|1|
+#l:33|Pasillo 1.1|121|11|1|1|
+#l:34|Pasillo 2|122|123|2|1|
+#l:35|Pasillo 2.1|122|121|1|1|
+#l:36|Pasillo 2.2|122|125|3|1|
+#l:37|Pasillo 3|123|124|2|2|
+#l:38|Pasillo 3.1|123|122|1|1|
+#l:39|Pasillo 4|124|13|2|0|
+#l:310|Pasillo 4.1|124|123|1|1|
+#l:311|Despensa|13|124|1|1|
+#l:312|Pasillo 5|125|122|4|1|
+#l:313|Pasillo 5.1|125|126|3|1|
+#l:314|Pasillo 6|126|125|4|1|
+#l:315|Pasillo 6.1|126|127|3|1|
+#l:316|Pasillo 7|127|126|4|1|
+#l:317|Pasillo 7.1|127|14|3|1|
+#l:318|Agujero|14|127|4|1|
+#l:319|Agujero 1.1|14|13|2|1|

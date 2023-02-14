@@ -1,0 +1,122 @@
+\hypertarget{game__reader_8c}{}\doxysection{game\+\_\+reader.\+c File Reference}
+\label{game__reader_8c}\index{game\_reader.c@{game\_reader.c}}
+
+
+It implements the game reader and all the associated calls for each command.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for game\+\_\+reader.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{game__reader_8c_a0d01072a28b01545d36240cb8bd9d4f8}{game\+\_\+load\+\_\+spaces}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em load the spaces using hormiguero.\+h \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{game__reader_8c_a66279ceefe2efe0967be248e8d0e0565}{game\+\_\+load\+\_\+objects}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It load the objects. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{game__reader_8c_a2ebcecf61b03e247035d0d15e41e77ad}{game\+\_\+load\+\_\+players}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It load the player. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{game__reader_8c_af79d1321ce5edb9e28fcbeae36640b4c}{game\+\_\+load\+\_\+enemies}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It load the enemies. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{game__reader_8c_aab4103cf97109ac921f358858ca2684d}{game\+\_\+load\+\_\+links}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It load the links. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the game reader and all the associated calls for each command. 
+
+\begin{DoxyAuthor}{Author}
+Iñigo Alvarez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+21-\/02-\/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__reader_8c_af79d1321ce5edb9e28fcbeae36640b4c}\label{game__reader_8c_af79d1321ce5edb9e28fcbeae36640b4c}} 
+\index{game\_reader.c@{game\_reader.c}!game\_load\_enemies@{game\_load\_enemies}}
+\index{game\_load\_enemies@{game\_load\_enemies}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_load\_enemies()}{game\_load\_enemies()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US game\+\_\+load\+\_\+enemies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It load the enemies. 
+
+It load the enemies. \mbox{\Hypertarget{game__reader_8c_aab4103cf97109ac921f358858ca2684d}\label{game__reader_8c_aab4103cf97109ac921f358858ca2684d}} 
+\index{game\_reader.c@{game\_reader.c}!game\_load\_links@{game\_load\_links}}
+\index{game\_load\_links@{game\_load\_links}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_load\_links()}{game\_load\_links()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US game\+\_\+load\+\_\+links (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It load the links. 
+
+It load the links. \mbox{\Hypertarget{game__reader_8c_a66279ceefe2efe0967be248e8d0e0565}\label{game__reader_8c_a66279ceefe2efe0967be248e8d0e0565}} 
+\index{game\_reader.c@{game\_reader.c}!game\_load\_objects@{game\_load\_objects}}
+\index{game\_load\_objects@{game\_load\_objects}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_load\_objects()}{game\_load\_objects()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US game\+\_\+load\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It load the objects. 
+
+It load the objects. \mbox{\Hypertarget{game__reader_8c_a2ebcecf61b03e247035d0d15e41e77ad}\label{game__reader_8c_a2ebcecf61b03e247035d0d15e41e77ad}} 
+\index{game\_reader.c@{game\_reader.c}!game\_load\_players@{game\_load\_players}}
+\index{game\_load\_players@{game\_load\_players}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_load\_players()}{game\_load\_players()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US game\+\_\+load\+\_\+players (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It load the player. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game \\
+\hline
+{\em filename} & char pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status, if everything goes well or E\+R\+R\+OR if there was some mistake opening the file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__reader_8c_a0d01072a28b01545d36240cb8bd9d4f8}\label{game__reader_8c_a0d01072a28b01545d36240cb8bd9d4f8}} 
+\index{game\_reader.c@{game\_reader.c}!game\_load\_spaces@{game\_load\_spaces}}
+\index{game\_load\_spaces@{game\_load\_spaces}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_load\_spaces()}{game\_load\_spaces()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US game\+\_\+load\+\_\+spaces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+load the spaces using hormiguero.\+h 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game that contains the data \\
+\hline
+{\em filename} & the file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status 
+\end{DoxyReturn}

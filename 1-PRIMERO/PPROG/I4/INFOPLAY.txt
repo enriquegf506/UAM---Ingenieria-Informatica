@@ -1,0 +1,13 @@
+﻿INFORMACIÓN NECESARIA PARA JUGAR:
+
+- 	Para moverte, debes escribir move(north, south, east, west, up and down)
+
+-	Necesitas coger objetos que tengan luz para poder saber que hay en el espacio e inspeccionarlo con 	el comando take(“objeto”), los luminosos son la linterna, la cual esta apagada y debe ser encendida, y el fuego, el cual necesita de la antorcha para ser cogido. 
+
+-	Hay espacios a los que no podrás acceder, ya que están cerrados. Para ello necesitas coger el TNT o la llave, y utilizar el comando open una vez cogidos esos objetos, tras esto podrás pasar.
+
+-	El juego terminará si al luchar contra el enemigo el jugador queda sin vida o si se utiliza el comando exit.
+
+-	Solo podrás atacar al enemigo si estás en el mismo espacio, para ello, se utiliza el comando attack o a. Este comando simula una pelea entre jugador y enemigo y quita 1 de vida a uno de los dos. Una vez muerto el enemigo, este desaparecerá.
+
+

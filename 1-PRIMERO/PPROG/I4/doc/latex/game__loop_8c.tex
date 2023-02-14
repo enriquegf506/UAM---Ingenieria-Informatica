@@ -1,0 +1,122 @@
+\hypertarget{game__loop_8c}{}\doxysection{game\+\_\+loop.\+c File Reference}
+\label{game__loop_8c}\index{game\_loop.c@{game\_loop.c}}
+
+
+It defines the game loop.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}graphic\+\_\+engine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}command.\+h\char`\"{}}\newline
+Include dependency graph for game\+\_\+loop.\+c\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Game}{\+\_\+\+Game}}
+\begin{DoxyCompactList}\small\item\em Game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game__loop_8c_a1c78d6052c905d10401d2424b6979772}{game\+\_\+loop\+\_\+init}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$$\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$$\ast$gengine, char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em inicilizes the game and verify it doesn\textquotesingle{}t have errors \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__loop_8c_acdda052c62c8c07d01bb7478057dfa5a}{game\+\_\+loop\+\_\+run}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$$\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$gengine)
+\begin{DoxyCompactList}\small\item\em execute the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}{game\+\_\+loop\+\_\+cleanup}} (\mbox{\hyperlink{struct__Game}{Game}} $\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$gengine)
+\begin{DoxyCompactList}\small\item\em destrois the game and the graphics created \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines the game loop. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/11-\/2020 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}\label{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_cleanup@{game\_loop\_cleanup}}
+\index{game\_loop\_cleanup@{game\_loop\_cleanup}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_cleanup()}{game\_loop\_cleanup()}}
+{\footnotesize\ttfamily void game\+\_\+loop\+\_\+cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{gengine }\end{DoxyParamCaption})}
+
+
+
+destrois the game and the graphics created 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$gengine} & the engine of the graphics we delete \\
+\hline
+{\em game} & the game we delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a1c78d6052c905d10401d2424b6979772}\label{game__loop_8c_a1c78d6052c905d10401d2424b6979772}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_init@{game\_loop\_init}}
+\index{game\_loop\_init@{game\_loop\_init}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_init()}{game\_loop\_init()}}
+{\footnotesize\ttfamily int game\+\_\+loop\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$$\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$$\ast$}]{gengine,  }\item[{char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+inicilizes the game and verify it doesn\textquotesingle{}t have errors 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$game} & game variable used to create the game \\
+\hline
+{\em $\ast$$\ast$gengine} & game engine \\
+\hline
+{\em $\ast$file\+\_\+name} & game of the file by which we create the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if error, 0 if there are not errors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__loop_8c_acdda052c62c8c07d01bb7478057dfa5a}\label{game__loop_8c_acdda052c62c8c07d01bb7478057dfa5a}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_run@{game\_loop\_run}}
+\index{game\_loop\_run@{game\_loop\_run}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_run()}{game\_loop\_run()}}
+{\footnotesize\ttfamily void game\+\_\+loop\+\_\+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Game}{Game}} $\ast$$\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{gengine }\end{DoxyParamCaption})}
+
+
+
+execute the game 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & variable that contains the game \\
+\hline
+{\em $\ast$gengine} & motor used for the game graphics \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{game\_loop.c@{game\_loop.c}!main@{main}}
+\index{main@{main}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Main function 

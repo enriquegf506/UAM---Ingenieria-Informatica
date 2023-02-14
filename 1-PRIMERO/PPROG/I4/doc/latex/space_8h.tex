@@ -1,0 +1,417 @@
+\hypertarget{space_8h}{}\doxysection{space.\+h File Reference}
+\label{space_8h}\index{space.h@{space.h}}
+
+
+It defines the link interface.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}set.\+h\char`\"{}}\newline
+Include dependency graph for space.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{space_8h_a5f54fd55f983a2e33ce076cd9f587e82}\label{space_8h_a5f54fd55f983a2e33ce076cd9f587e82}} 
+\#define {\bfseries M\+A\+X\+\_\+\+S\+P\+A\+C\+ES}~100
+\item 
+\mbox{\Hypertarget{space_8h_a088cbe7c6f78264d46c2624194c5c680}\label{space_8h_a088cbe7c6f78264d46c2624194c5c680}} 
+\#define {\bfseries F\+I\+R\+S\+T\+\_\+\+S\+P\+A\+CE}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__Space}{\+\_\+\+Space}} \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$ \mbox{\hyperlink{space_8h_a162866fcea156b800fd546d0ffd271c9}{space\+\_\+create}} (Id id)
+\begin{DoxyCompactList}\small\item\em It creates a new space, allocating memory and initializing its memebers. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a5c70c70398923693ddbe4dfac8d72a0d}{space\+\_\+destroy}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It destroys a space, freeing the allocated memory. \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{space_8h_ac8ddfd0d8692fd852ee49698c446cb50}{space\+\_\+get\+\_\+id}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It gets the id of a space. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_aab5b468f9822ab78dbe16d1321870d93}{space\+\_\+set\+\_\+name}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em It sets the name of a space. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8h_a310c540cd6e11073f7328add1f927001}{space\+\_\+get\+\_\+name}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It gets the name of a space. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a69b9e22046b7b44dc5aa2afe7cc0a1b9}{space\+\_\+add\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, Id id)
+\begin{DoxyCompactList}\small\item\em It sets whether the space has an object or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set}} $\ast$ \mbox{\hyperlink{space_8h_afc0e3f36d3bdf0105c5d25c256c9cfbd}{space\+\_\+get\+\_\+objects}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It gets whether the space has an object or not. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a18eca058da6cdf20ae5eda9d122d992e}{space\+\_\+print}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It prints the space information. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{space_8h_a88c1841666eaaa97456f90e8d3c130d2}{space\+\_\+contain\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, Id id)
+\begin{DoxyCompactList}\small\item\em It determines whether the space has an object or not. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a32c30f0aa89f3f28c06802f1c72c1fdc}{space\+\_\+del\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, Id id)
+\begin{DoxyCompactList}\small\item\em It deletes the object from the space. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a4141efc543561f5083f2138eb6ef076d}{space\+\_\+set\+\_\+gdesc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$new, int posicion)
+\begin{DoxyCompactList}\small\item\em It sets the space graphic description. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8h_a65d50aa65a38b8a3fc922d439e950152}{space\+\_\+get\+\_\+gdesc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, int posicion)
+\begin{DoxyCompactList}\small\item\em It gets the space graphic description. \end{DoxyCompactList}\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a8d61f34431bf1f48e7b7f0a5d845a103}{space\+\_\+set\+\_\+full\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$description)
+\item 
+char $\ast$ \mbox{\hyperlink{space_8h_ae0bec0f89746702d4f2914607a50b7ee}{space\+\_\+get\+\_\+full\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_a7311b9b73cdfc4786971cc0738c177f6}{space\+\_\+set\+\_\+desc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$description)
+\item 
+char $\ast$ \mbox{\hyperlink{space_8h_ace445b138fed78c0e463aac65513acb0}{space\+\_\+get\+\_\+desc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\item 
+S\+T\+A\+T\+US \mbox{\hyperlink{space_8h_ad30caf9cb1ce3623c706a4ae673a4276}{space\+\_\+set\+\_\+illumination}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, B\+O\+OL illumination)
+\item 
+B\+O\+OL \mbox{\hyperlink{space_8h_af85214f76df39ae95ccd617f2482057c}{space\+\_\+get\+\_\+illumination}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines the link interface. 
+
+It defines the test interface.
+
+It defines the space interface.
+
+\begin{DoxyAuthor}{Author}
+Iñigo Alvarez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/11-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/11-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{space_8h_a67533ffc2b70463baecc38fb0629bbfc}\label{space_8h_a67533ffc2b70463baecc38fb0629bbfc}} 
+\index{space.h@{space.h}!Space@{Space}}
+\index{Space@{Space}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{Space}{Space}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__Space}{\+\_\+\+Space}} \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}}}
+
+Structure for space 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{space_8h_a69b9e22046b7b44dc5aa2afe7cc0a1b9}\label{space_8h_a69b9e22046b7b44dc5aa2afe7cc0a1b9}} 
+\index{space.h@{space.h}!space\_add\_object@{space\_add\_object}}
+\index{space\_add\_object@{space\_add\_object}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_add\_object()}{space\_add\_object()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+add\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It sets whether the space has an object or not. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em id} & id of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets whether the space has an object or not \mbox{\Hypertarget{space_8h_a88c1841666eaaa97456f90e8d3c130d2}\label{space_8h_a88c1841666eaaa97456f90e8d3c130d2}} 
+\index{space.h@{space.h}!space\_contain\_object@{space\_contain\_object}}
+\index{space\_contain\_object@{space\_contain\_object}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_contain\_object()}{space\_contain\_object()}}
+{\footnotesize\ttfamily B\+O\+OL space\+\_\+contain\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It determines whether the space has an object or not. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em id} & id of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the space contains the object, F\+A\+L\+SE if not
+\end{DoxyReturn}
+It determines whether the space has an object or not \mbox{\Hypertarget{space_8h_a162866fcea156b800fd546d0ffd271c9}\label{space_8h_a162866fcea156b800fd546d0ffd271c9}} 
+\index{space.h@{space.h}!space\_create@{space\_create}}
+\index{space\_create@{space\_create}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_create()}{space\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}}$\ast$ space\+\_\+create (\begin{DoxyParamCaption}\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It creates a new space, allocating memory and initializing its memebers. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the identification number for the new space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new space, initialized
+\end{DoxyReturn}
+space\+\_\+create allocates memory for a new space and initializes its members \mbox{\Hypertarget{space_8h_a32c30f0aa89f3f28c06802f1c72c1fdc}\label{space_8h_a32c30f0aa89f3f28c06802f1c72c1fdc}} 
+\index{space.h@{space.h}!space\_del\_object@{space\_del\_object}}
+\index{space\_del\_object@{space\_del\_object}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_del\_object()}{space\_del\_object()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+del\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{Id}]{id }\end{DoxyParamCaption})}
+
+
+
+It deletes the object from the space. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em id} & id of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the space contains the object, F\+A\+L\+SE if not
+\end{DoxyReturn}
+t deletes the object from the space \mbox{\Hypertarget{space_8h_a5c70c70398923693ddbe4dfac8d72a0d}\label{space_8h_a5c70c70398923693ddbe4dfac8d72a0d}} 
+\index{space.h@{space.h}!space\_destroy@{space\_destroy}}
+\index{space\_destroy@{space\_destroy}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_destroy()}{space\_destroy()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It destroys a space, freeing the allocated memory. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space that must be destroyed ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+space\+\_\+destroy frees the previous memory allocation for a space \mbox{\Hypertarget{space_8h_ace445b138fed78c0e463aac65513acb0}\label{space_8h_ace445b138fed78c0e463aac65513acb0}} 
+\index{space.h@{space.h}!space\_get\_desc@{space\_get\_desc}}
+\index{space\_get\_desc@{space\_get\_desc}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_desc()}{space\_get\_desc()}}
+{\footnotesize\ttfamily char$\ast$ space\+\_\+get\+\_\+desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+It gets the space description \mbox{\Hypertarget{space_8h_ae0bec0f89746702d4f2914607a50b7ee}\label{space_8h_ae0bec0f89746702d4f2914607a50b7ee}} 
+\index{space.h@{space.h}!space\_get\_full\_description@{space\_get\_full\_description}}
+\index{space\_get\_full\_description@{space\_get\_full\_description}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_full\_description()}{space\_get\_full\_description()}}
+{\footnotesize\ttfamily char$\ast$ space\+\_\+get\+\_\+full\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+It gets the space description \mbox{\Hypertarget{space_8h_a65d50aa65a38b8a3fc922d439e950152}\label{space_8h_a65d50aa65a38b8a3fc922d439e950152}} 
+\index{space.h@{space.h}!space\_get\_gdesc@{space\_get\_gdesc}}
+\index{space\_get\_gdesc@{space\_get\_gdesc}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_gdesc()}{space\_get\_gdesc()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+gdesc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{int}]{posicion }\end{DoxyParamCaption})}
+
+
+
+It gets the space graphic description. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em posicion} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the graphic description of the space
+\end{DoxyReturn}
+It gets the space graphic description \mbox{\Hypertarget{space_8h_ac8ddfd0d8692fd852ee49698c446cb50}\label{space_8h_ac8ddfd0d8692fd852ee49698c446cb50}} 
+\index{space.h@{space.h}!space\_get\_id@{space\_get\_id}}
+\index{space\_get\_id@{space\_get\_id}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_id()}{space\_get\_id()}}
+{\footnotesize\ttfamily Id space\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It gets the id of a space. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of space
+\end{DoxyReturn}
+It gets the id of a space \mbox{\Hypertarget{space_8h_af85214f76df39ae95ccd617f2482057c}\label{space_8h_af85214f76df39ae95ccd617f2482057c}} 
+\index{space.h@{space.h}!space\_get\_illumination@{space\_get\_illumination}}
+\index{space\_get\_illumination@{space\_get\_illumination}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_illumination()}{space\_get\_illumination()}}
+{\footnotesize\ttfamily B\+O\+OL space\+\_\+get\+\_\+illumination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+It gets the space illumination \mbox{\Hypertarget{space_8h_a310c540cd6e11073f7328add1f927001}\label{space_8h_a310c540cd6e11073f7328add1f927001}} 
+\index{space.h@{space.h}!space\_get\_name@{space\_get\_name}}
+\index{space\_get\_name@{space\_get\_name}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_name()}{space\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It gets the name of a space. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string with the name of the space
+\end{DoxyReturn}
+It gets the name of a space \mbox{\Hypertarget{space_8h_afc0e3f36d3bdf0105c5d25c256c9cfbd}\label{space_8h_afc0e3f36d3bdf0105c5d25c256c9cfbd}} 
+\index{space.h@{space.h}!space\_get\_objects@{space\_get\_objects}}
+\index{space\_get\_objects@{space\_get\_objects}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_get\_objects()}{space\_get\_objects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set}}$\ast$ space\+\_\+get\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It gets whether the space has an object or not. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean, specifying if in the space there is an object (T\+R\+UE) or not (F\+A\+L\+SE)
+\end{DoxyReturn}
+It gets whether the space has an object or not \mbox{\Hypertarget{space_8h_a18eca058da6cdf20ae5eda9d122d992e}\label{space_8h_a18eca058da6cdf20ae5eda9d122d992e}} 
+\index{space.h@{space.h}!space\_print@{space\_print}}
+\index{space\_print@{space\_print}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_print()}{space\_print()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It prints the space information. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+This fucntion shows the id and name of the space, the spaces that surrounds it and wheter it has an object or not. 
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8h_a7311b9b73cdfc4786971cc0738c177f6}\label{space_8h_a7311b9b73cdfc4786971cc0738c177f6}} 
+\index{space.h@{space.h}!space\_set\_desc@{space\_set\_desc}}
+\index{space\_set\_desc@{space\_set\_desc}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_set\_desc()}{space\_set\_desc()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+set\+\_\+desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+It sets the space description \mbox{\Hypertarget{space_8h_a8d61f34431bf1f48e7b7f0a5d845a103}\label{space_8h_a8d61f34431bf1f48e7b7f0a5d845a103}} 
+\index{space.h@{space.h}!space\_set\_full\_description@{space\_set\_full\_description}}
+\index{space\_set\_full\_description@{space\_set\_full\_description}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_set\_full\_description()}{space\_set\_full\_description()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+set\+\_\+full\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+It sets the space description \mbox{\Hypertarget{space_8h_a4141efc543561f5083f2138eb6ef076d}\label{space_8h_a4141efc543561f5083f2138eb6ef076d}} 
+\index{space.h@{space.h}!space\_set\_gdesc@{space\_set\_gdesc}}
+\index{space\_set\_gdesc@{space\_set\_gdesc}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_set\_gdesc()}{space\_set\_gdesc()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+set\+\_\+gdesc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{new,  }\item[{int}]{posicion }\end{DoxyParamCaption})}
+
+
+
+It sets the space graphic description. 
+
+\begin{DoxyAuthor}{Author}
+Marcos Alonso
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em new} & new char for gdesc \\
+\hline
+{\em posicion} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE or F\+A\+L\+SE
+\end{DoxyReturn}
+It sets the space graphic description \mbox{\Hypertarget{space_8h_ad30caf9cb1ce3623c706a4ae673a4276}\label{space_8h_ad30caf9cb1ce3623c706a4ae673a4276}} 
+\index{space.h@{space.h}!space\_set\_illumination@{space\_set\_illumination}}
+\index{space\_set\_illumination@{space\_set\_illumination}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_set\_illumination()}{space\_set\_illumination()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+set\+\_\+illumination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{B\+O\+OL}]{illumination }\end{DoxyParamCaption})}
+
+It sets the space illumination \mbox{\Hypertarget{space_8h_aab5b468f9822ab78dbe16d1321870d93}\label{space_8h_aab5b468f9822ab78dbe16d1321870d93}} 
+\index{space.h@{space.h}!space\_set\_name@{space\_set\_name}}
+\index{space\_set\_name@{space\_set\_name}!space.h@{space.h}}
+\doxysubsubsection{\texorpdfstring{space\_set\_name()}{space\_set\_name()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+US space\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+It sets the name of a space. 
+
+\begin{DoxyAuthor}{Author}
+Profesores P\+P\+R\+OG
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & a pointer to the space \\
+\hline
+{\em name} & a string with the name to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK, if everything goes well or E\+R\+R\+OR if there was some mistake
+\end{DoxyReturn}
+It sets the name of a space 

@@ -1,0 +1,500 @@
+Size: 1
+Execution time: 0.810000
+Average: 1.000000
+Max: 1
+Min: 1
+Size: 101
+Execution time: 0.412871
+Average: 6.118614
+Max: 7
+Min: 1
+Size: 201
+Execution time: 0.251144
+Average: 7.113781
+Max: 8
+Min: 1
+Size: 301
+Execution time: 0.238206
+Average: 7.488970
+Max: 9
+Min: 1
+Size: 401
+Execution time: 0.237107
+Average: 8.117556
+Max: 9
+Min: 1
+Size: 501
+Execution time: 0.233613
+Average: 8.225689
+Max: 9
+Min: 2
+Size: 601
+Execution time: 0.234293
+Average: 8.488502
+Max: 10
+Min: 2
+Size: 701
+Execution time: 0.235235
+Average: 8.636904
+Max: 10
+Min: 1
+Size: 801
+Execution time: 0.236055
+Average: 9.110287
+Max: 10
+Min: 2
+Size: 901
+Execution time: 0.237103
+Average: 9.198812
+Max: 10
+Min: 1
+Size: 1001
+Execution time: 0.237263
+Average: 9.221319
+Max: 10
+Min: 1
+Size: 1101
+Execution time: 0.236312
+Average: 9.447212
+Max: 11
+Min: 1
+Size: 1201
+Execution time: 0.236378
+Average: 9.489759
+Max: 11
+Min: 1
+Size: 1301
+Execution time: 0.237955
+Average: 9.631422
+Max: 11
+Min: 1
+Size: 1401
+Execution time: 0.238216
+Average: 9.646253
+Max: 11
+Min: 2
+Size: 1501
+Execution time: 0.238787
+Average: 9.684930
+Max: 11
+Min: 2
+Size: 1601
+Execution time: 0.239638
+Average: 10.112911
+Max: 11
+Min: 3
+Size: 1701
+Execution time: 0.241099
+Average: 10.130223
+Max: 11
+Min: 2
+Size: 1801
+Execution time: 0.240533
+Average: 10.200583
+Max: 11
+Min: 2
+Size: 1901
+Execution time: 0.241778
+Average: 10.205634
+Max: 11
+Min: 1
+Size: 2001
+Execution time: 0.240585
+Average: 10.224888
+Max: 11
+Min: 2
+Size: 2101
+Execution time: 0.240048
+Average: 10.434117
+Max: 12
+Min: 2
+Size: 2201
+Execution time: 0.240700
+Average: 10.448632
+Max: 12
+Min: 2
+Size: 2301
+Execution time: 0.239522
+Average: 10.453146
+Max: 12
+Min: 2
+Size: 2401
+Execution time: 0.241603
+Average: 10.488763
+Max: 12
+Min: 2
+Size: 2501
+Execution time: 0.241208
+Average: 10.505278
+Max: 12
+Min: 2
+Size: 2601
+Execution time: 0.242141
+Average: 10.632034
+Max: 12
+Min: 2
+Size: 2701
+Execution time: 0.242495
+Average: 10.637171
+Max: 12
+Min: 2
+Size: 2801
+Execution time: 0.242999
+Average: 10.642931
+Max: 12
+Min: 2
+Size: 2901
+Execution time: 0.242699
+Average: 10.673002
+Max: 12
+Min: 3
+Size: 3001
+Execution time: 0.241739
+Average: 10.685335
+Max: 12
+Min: 3
+Size: 3101
+Execution time: 0.243812
+Average: 11.107991
+Max: 12
+Min: 4
+Size: 3201
+Execution time: 0.244202
+Average: 11.114230
+Max: 12
+Min: 2
+Size: 3301
+Execution time: 0.244590
+Average: 11.118234
+Max: 12
+Min: 2
+Size: 3401
+Execution time: 0.238583
+Average: 11.133187
+Max: 12
+Min: 2
+Size: 3501
+Execution time: 0.237741
+Average: 11.136301
+Max: 12
+Min: 3
+Size: 3601
+Execution time: 0.238248
+Average: 11.200428
+Max: 12
+Min: 2
+Size: 3701
+Execution time: 0.237606
+Average: 11.201462
+Max: 12
+Min: 2
+Size: 3801
+Execution time: 0.238058
+Average: 11.206438
+Max: 12
+Min: 3
+Size: 3901
+Execution time: 0.238300
+Average: 11.219257
+Max: 12
+Min: 3
+Size: 4001
+Execution time: 0.238428
+Average: 11.224899
+Max: 12
+Min: 2
+Size: 4101
+Execution time: 0.241024
+Average: 11.433687
+Max: 12
+Min: 3
+Size: 4201
+Execution time: 0.242002
+Average: 11.433137
+Max: 13
+Min: 1
+Size: 4301
+Execution time: 0.241435
+Average: 11.438163
+Max: 13
+Min: 1
+Size: 4401
+Execution time: 0.241843
+Average: 11.444606
+Max: 13
+Min: 3
+Size: 4501
+Execution time: 0.241953
+Average: 11.449042
+Max: 13
+Min: 3
+Size: 4601
+Execution time: 0.242795
+Average: 11.451576
+Max: 13
+Min: 1
+Size: 4701
+Execution time: 0.239536
+Average: 11.487037
+Max: 13
+Min: 2
+Size: 4801
+Execution time: 0.238000
+Average: 11.487988
+Max: 13
+Min: 3
+Size: 4901
+Execution time: 0.237796
+Average: 11.500412
+Max: 13
+Min: 3
+Size: 5001
+Execution time: 0.237650
+Average: 11.504053
+Max: 13
+Min: 3
+Size: 5101
+Execution time: 0.237959
+Average: 11.507657
+Max: 13
+Min: 3
+Size: 5201
+Execution time: 0.239006
+Average: 11.631921
+Max: 13
+Min: 3
+Size: 5301
+Execution time: 0.237827
+Average: 11.633113
+Max: 13
+Min: 3
+Size: 5401
+Execution time: 0.242401
+Average: 11.640991
+Max: 13
+Min: 3
+Size: 5501
+Execution time: 0.247233
+Average: 11.638753
+Max: 13
+Min: 1
+Size: 5601
+Execution time: 0.247161
+Average: 11.644031
+Max: 13
+Min: 2
+Size: 5701
+Execution time: 0.247662
+Average: 11.674071
+Max: 13
+Min: 3
+Size: 5801
+Execution time: 0.246683
+Average: 11.676821
+Max: 13
+Min: 1
+Size: 5901
+Execution time: 0.246656
+Average: 11.682606
+Max: 13
+Min: 4
+Size: 6001
+Execution time: 0.246481
+Average: 11.686896
+Max: 13
+Min: 3
+Size: 6101
+Execution time: 0.246530
+Average: 11.686845
+Max: 13
+Min: 4
+Size: 6201
+Execution time: 0.238916
+Average: 12.110581
+Max: 13
+Min: 3
+Size: 6301
+Execution time: 0.240389
+Average: 12.110241
+Max: 13
+Min: 3
+Size: 6401
+Execution time: 0.241028
+Average: 12.113973
+Max: 13
+Min: 1
+Size: 6501
+Execution time: 0.240838
+Average: 12.114270
+Max: 13
+Min: 3
+Size: 6601
+Execution time: 0.240577
+Average: 12.115922
+Max: 13
+Min: 2
+Size: 6701
+Execution time: 0.240401
+Average: 12.127603
+Max: 13
+Min: 2
+Size: 6801
+Execution time: 0.241248
+Average: 12.129643
+Max: 13
+Min: 3
+Size: 6901
+Execution time: 0.240897
+Average: 12.129878
+Max: 13
+Min: 1
+Size: 7001
+Execution time: 0.241363
+Average: 12.135302
+Max: 13
+Min: 3
+Size: 7101
+Execution time: 0.245495
+Average: 12.136869
+Max: 13
+Min: 2
+Size: 7201
+Execution time: 0.249139
+Average: 12.200125
+Max: 13
+Min: 3
+Size: 7301
+Execution time: 0.248995
+Average: 12.202020
+Max: 13
+Min: 2
+Size: 7401
+Execution time: 0.248931
+Average: 12.199980
+Max: 13
+Min: 4
+Size: 7501
+Execution time: 0.249561
+Average: 12.204174
+Max: 13
+Min: 3
+Size: 7601
+Execution time: 0.249296
+Average: 12.205035
+Max: 13
+Min: 3
+Size: 7701
+Execution time: 0.247778
+Average: 12.220475
+Max: 13
+Min: 2
+Size: 7801
+Execution time: 0.248959
+Average: 12.221588
+Max: 13
+Min: 4
+Size: 7901
+Execution time: 0.248623
+Average: 12.221294
+Max: 13
+Min: 3
+Size: 8001
+Execution time: 0.249044
+Average: 12.225321
+Max: 13
+Min: 2
+Size: 8101
+Execution time: 0.248816
+Average: 12.225810
+Max: 13
+Min: 2
+Size: 8201
+Execution time: 0.248348
+Average: 12.432689
+Max: 14
+Min: 2
+Size: 8301
+Execution time: 0.248403
+Average: 12.431848
+Max: 14
+Min: 2
+Size: 8401
+Execution time: 0.248581
+Average: 12.432147
+Max: 14
+Min: 1
+Size: 8501
+Execution time: 0.248711
+Average: 12.435662
+Max: 14
+Min: 3
+Size: 8601
+Execution time: 0.247961
+Average: 12.436425
+Max: 14
+Min: 2
+Size: 8701
+Execution time: 0.249537
+Average: 12.437058
+Max: 14
+Min: 1
+Size: 8801
+Execution time: 0.249135
+Average: 12.445585
+Max: 14
+Min: 2
+Size: 8901
+Execution time: 0.246613
+Average: 12.445418
+Max: 14
+Min: 4
+Size: 9001
+Execution time: 0.248428
+Average: 12.449429
+Max: 14
+Min: 4
+Size: 9101
+Execution time: 0.249081
+Average: 12.450903
+Max: 14
+Min: 4
+Size: 9201
+Execution time: 0.248915
+Average: 12.450717
+Max: 14
+Min: 3
+Size: 9301
+Execution time: 0.249360
+Average: 12.484263
+Max: 14
+Min: 3
+Size: 9401
+Execution time: 0.249265
+Average: 12.485756
+Max: 14
+Min: 4
+Size: 9501
+Execution time: 0.249665
+Average: 12.488900
+Max: 14
+Min: 4
+Size: 9601
+Execution time: 0.249264
+Average: 12.489666
+Max: 14
+Min: 3
+Size: 9701
+Execution time: 0.249550
+Average: 12.489446
+Max: 14
+Min: 4
+Size: 9801
+Execution time: 0.248752
+Average: 12.499466
+Max: 14
+Min: 4
+Size: 9901
+Execution time: 0.246141
+Average: 12.500990
+Max: 14
+Min: 3

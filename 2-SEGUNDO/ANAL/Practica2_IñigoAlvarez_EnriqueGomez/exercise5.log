@@ -1,0 +1,45 @@
+Size: 999
+Execution time: 880.411000
+Average: 11000.000000
+Max: 13454
+Min: 9545
+Size: 1999
+Execution time: 1875.141000
+Average: 24677.000000
+Max: 29817
+Min: 21928
+Size: 2999
+Execution time: 2911.870000
+Average: 39593.000000
+Max: 49557
+Min: 35238
+Size: 3999
+Execution time: 3973.182000
+Average: 54900.000000
+Max: 68618
+Min: 49687
+Size: 4999
+Execution time: 5069.370000
+Average: 70920.000000
+Max: 83960
+Min: 63031
+Size: 5999
+Execution time: 6399.272000
+Average: 87488.000000
+Max: 103041
+Min: 78071
+Size: 6999
+Execution time: 7559.331000
+Average: 104224.000000
+Max: 134687
+Min: 94642
+Size: 7999
+Execution time: 8463.474000
+Average: 120984.000000
+Max: 143310
+Min: 110490
+Size: 8999
+Execution time: 9608.521000
+Average: 138159.000000
+Max: 167464
+Min: 125817

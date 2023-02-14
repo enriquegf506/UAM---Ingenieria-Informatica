@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['enemy_5fcreate_502',['enemy_create',['../enemy_8c.html#a56fde4e35c97103fb78dce2cb1ee0416',1,'enemy_create(Id id):&#160;enemy.c'],['../enemy_8h.html#a56fde4e35c97103fb78dce2cb1ee0416',1,'enemy_create(Id id):&#160;enemy.c']]],
+  ['enemy_5fdestroy_503',['enemy_destroy',['../enemy_8c.html#a45ea2d803df5080ec26cf9cfe2d9bfae',1,'enemy_destroy(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#a45ea2d803df5080ec26cf9cfe2d9bfae',1,'enemy_destroy(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fget_5fhealth_504',['enemy_get_health',['../enemy_8c.html#acffe1f3073056b62ff34224bc986bbbf',1,'enemy_get_health(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#acffe1f3073056b62ff34224bc986bbbf',1,'enemy_get_health(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fget_5fid_505',['enemy_get_id',['../enemy_8c.html#aa07e34cdfc9c334fce425d5496ab0cfd',1,'enemy_get_id(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#aa07e34cdfc9c334fce425d5496ab0cfd',1,'enemy_get_id(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fget_5flocation_506',['enemy_get_location',['../enemy_8c.html#a909401b9002301611512d8a488c8c53c',1,'enemy_get_location(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#a909401b9002301611512d8a488c8c53c',1,'enemy_get_location(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fget_5fname_507',['enemy_get_name',['../enemy_8c.html#ac9f9a60121098546e1129891e26bfb77',1,'enemy_get_name(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#ac9f9a60121098546e1129891e26bfb77',1,'enemy_get_name(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fprint_508',['enemy_print',['../enemy_8c.html#a2d65c8fc2ba940ab4ad5b7380d9cd5e4',1,'enemy_print(Enemy *enemy):&#160;enemy.c'],['../enemy_8h.html#a2d65c8fc2ba940ab4ad5b7380d9cd5e4',1,'enemy_print(Enemy *enemy):&#160;enemy.c']]],
+  ['enemy_5fset_5fhealth_509',['enemy_set_health',['../enemy_8c.html#a024da73a750adefcac3c4e5bab4e3074',1,'enemy_set_health(Enemy *enemy, int health):&#160;enemy.c'],['../enemy_8h.html#a024da73a750adefcac3c4e5bab4e3074',1,'enemy_set_health(Enemy *enemy, int health):&#160;enemy.c']]],
+  ['enemy_5fset_5fid_510',['enemy_set_id',['../enemy_8c.html#a9bf1d7b024c9357038d44494d4cfdc04',1,'enemy_set_id(Enemy *enemy, Id id):&#160;enemy.c'],['../enemy_8h.html#a9bf1d7b024c9357038d44494d4cfdc04',1,'enemy_set_id(Enemy *enemy, Id id):&#160;enemy.c']]],
+  ['enemy_5fset_5flocation_511',['enemy_set_location',['../enemy_8c.html#a98a2fac262a596ae62af76288f2a3447',1,'enemy_set_location(Enemy *enemy, Id id):&#160;enemy.c'],['../enemy_8h.html#a98a2fac262a596ae62af76288f2a3447',1,'enemy_set_location(Enemy *enemy, Id id):&#160;enemy.c']]],
+  ['enemy_5fset_5fname_512',['enemy_set_name',['../enemy_8c.html#a80766a877f0c2b8c09227a7250ffd742',1,'enemy_set_name(Enemy *enemy, char *name):&#160;enemy.c'],['../enemy_8h.html#a80766a877f0c2b8c09227a7250ffd742',1,'enemy_set_name(Enemy *enemy, char *name):&#160;enemy.c']]]
+];

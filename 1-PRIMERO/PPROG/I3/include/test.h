@@ -1,0 +1,56 @@
+/**
+ * @brief It defines the test interface
+ *
+ * @file test.h
+ * @author Profesores PPROG
+ * @version 2.0
+ * @date 29-11-2021
+ * @copyright GNU Public License
+ */
+
+#ifndef _TEST_H
+#define _TEST_H
+
+#pragma GCC diagnostic ignored "-Wpedantic"
+
+#ifndef NOCOLOR
+#define KRED  "\x1B[31m" /*!< Kred*/
+#define KGRN  "\x1B[32m" /*!< Kgrn*/
+#define KYEL  "\x1B[33m" /*!< Kyel*/
+#define KCYN  "\x1B[36m" /*!< Kcyn*/
+#define RESET "\033[0m"  /*!< Reset*/
+#else
+#define KRED
+#define KGRN
+#define KYEL
+#define KCYN
+#define RESET
+#endif
+
+/**
+ * @brief It defines print test result
+ *
+ * @author Enrique Gómez Fernández
+ */
+#define PRINT_TEST_RESULT(x) do{					\
+    __test_counter++;							\
+    __pass = (x);							\
+    __test_passed = (__pass)? __test_passed + 1 : __test_passed;	\
+    printf(KYEL "%s" RESET " line "  "%d " KCYN "%s" RESET ": %s\n",	\
+	   __FILE__, __LINE__ , __FUNCTION__,				\
+	   ((!__pass) ? KRED "NOT PASS" RESET : KGRN "PASS" RESET));	\
+  } while (0)
+
+
+/**
+ * @brief It defines print passed percentage
+ *
+ * @author Enrique Gómez Fernández
+ */
+#define PRINT_PASSED_PERCENTAGE printf("Tests passed %d%%\n", ((__test_passed * 100) / __test_counter))
+      
+static int __test_counter = 0;
+static int __test_passed  = 0;
+static int __pass = 0;
+
+#endif
