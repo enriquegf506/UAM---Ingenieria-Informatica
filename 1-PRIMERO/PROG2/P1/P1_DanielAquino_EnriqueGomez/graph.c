@@ -4,9 +4,10 @@
 #include "vertex.h"
 
 #define MAX_VTX 4096
-#define MAX_LINE 128   
+#define MAX_LINE 128
 
-struct _Graph {
+struct _Graph
+{
 Vertex *vertices[MAX_VTX];
 Bool connections[MAX_VTX][MAX_VTX];
 int num_vertices;
