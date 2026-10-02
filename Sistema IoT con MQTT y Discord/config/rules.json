@@ -1,0 +1,1 @@
+[{"condition": "if sensor 2 > 25", "action": "switch 1 ON"}, {"condition": "if sensor 2 < 26", "action": "switch 1 OFF"}]
