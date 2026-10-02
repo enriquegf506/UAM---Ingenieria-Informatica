@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>306</x><y>72</y><w>378</w><h>270</h></coordinates><panel_attributes>SecureBox
+--
+-username: string
+-db_path: string
+-master_key: bytes
+-salt: bytes
+-container_versions: dict
+--
++initialize(master_password)
++create_container(name)
++list_containers()
++edit_container(name)
++view_container(name)
++delete_container(name)
++get_container_history(name)
++restore_version(name, timestamp)
++unlock(password)
++restore_from_drive()
+-_save_vault()
+-_backup_to_drive()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>432</y><w>189</w><h>144</h></coordinates><panel_attributes>Container
+--
+-name: string
+-content: string
+--
++edit(self, new_content)
++get_history(self)
++restore_version(self, timestamp)
++to_dict(self)
++from_dict(cls, data)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>297</y><w>153</w><h>153</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>675</y><w>189</w><h>99</h></coordinates><panel_attributes>ContainerVersion
+--
+-name: string
+-timestamp: time
+--
++to_dict(self)
++from_dict(cls, data)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>567</y><w>27</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>288</y><w>216</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;220;10;220;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>783</x><y>405</y><w>279</w><h>162</h></coordinates><panel_attributes>GoogleDriveHandler
+--
+-credentials_path: string
+-creds: Credentials
+-service: DriveService
+-file_id: dict
+--
++__init__(credentials_path)
++authenticate()
++upload(file_path): bool
++download(filename, destination_path): bool
+-_get_file_id(filename): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>486</y><w>279</w><h>72</h></coordinates><panel_attributes>SecureBoxLogger
+--
+-logger: Logger
+--
++__init__(log_file)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>333</y><w>27</w><h>171</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>549</x><y>666</y><w>279</w><h>135</h></coordinates><panel_attributes>GoogleDriveHandler
+--
+-master_key: bytes
+--
++__init__(master_key)
++encrypt(data): bytes
++decrypt(encrypted_data): string
++{static} derive_key(password, salt): bytes
++{static} compress_data(data): bytes
++{static} decompress_data(data): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>333</y><w>27</w><h>351</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;370</additional_attributes></element></diagram>

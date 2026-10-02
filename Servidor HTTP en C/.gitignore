@@ -1,0 +1,6 @@
+server/.vscode/
+www/
+*.o
+server/server
+server/server.log
+htmlfiles/media/
